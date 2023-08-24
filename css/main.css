@@ -1,0 +1,225 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ================================= help css here ================================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #999999;
+    transition: all 0.3s ease-in;
+    font-family: sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+a{
+    text-transform: capitalize;
+}
+p{
+    font-size: 16px;
+}
+:root{
+    --nav-bg-color:#040402;
+    --nav-text-color:#f3f3f8;
+    --Han-Blue-color: #567CDB;
+    --text-color: #fff;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+.get-started{
+    display: flex;
+    align-items: center;
+  }
+  .get-cnt{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border: 1px solid var(--Han-Blue-color);
+      cursor: pointer;
+  }
+  .get-started:hover{
+      background: linear-gradient(90deg, rgba(86,124,219,1) 0%, rgb(116, 124, 212) 100%);
+  }
+  .get-started span i{
+      font-size: 25px;
+      color: var(--nav-text-color);
+      padding: 0 5px;
+  }
+  .get-started h5{
+      text-transform: uppercase;
+      color: var(--nav-text-color);
+      white-space: nowrap;
+      font-size: 17px;
+      font-weight: 500;
+  }
+
+
+
+
+
+
+/* ================================= header here ================================= */
+header{
+    background-color: var(--nav-bg-color);
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.logo a{
+    font-size: 32px;
+    color: var(--nav-text-color);
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    position: relative;
+    padding: 15px;
+}
+nav ul li a{
+    display: block;
+    color: var(--nav-text-color);
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: var(--Han-Blue-color);
+}
+
+/* ------------ socail icon ------------ */
+
+.socail-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 80px;
+}
+.socail-icon i{
+    padding: 5px;
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--nav-text-color);
+}
+.socail-icon i:hover{
+    color: var(--Han-Blue-color);
+}
+
+/* ------------ get started ------------ */
+
+
+/* ------------ humbarger ------------ */
+.humbarger{
+    cursor: pointer;
+    transition:  all 0.42s ease-in-out;
+    display: none;
+}
+.humbarger span{
+    display: block;
+    width: 29px;
+    height: 2px;
+    background-color: #fff;
+    margin: 07px 0;
+}
+.humbarger.active span:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
+}
+
+.humbarger.active span:nth-child(3){
+    transform: translateY(-4px) rotate(-45deg);
+}
+.humbarger.active span:nth-child(2){
+    display: none;
+}
+
+
+
+
+/* ================================= header here ================================= */
+#bg-cover{
+    background-image: url(../image/cover-image.webp);
+    max-width: 100%;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.781);
+    background-blend-mode: multiply;
+    
+}
+
+.bg-cover-cnt{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bg-cover-text{
+    text-align: center;
+    position: relative;
+}
+.bg-cover-text h1{
+    font-size: 70px;
+    color: var(--Han-Blue-color);
+    line-height: 90px;
+    /* font-size: clamp(40px, 10vw, 80px); */
+    font-size: 70px;
+    transition: all 0.42s ease-in;
+}
+#bg-cover .get-started{
+    display: inline-block;
+    margin: 50px 0;
+}
+#bg-cover .get-cnt{
+    text-align: center;
+}
+
+/* ------------ bg-down-icon ------------ */
+.bg-down-icon{
+    width: 30px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+.bg-down-icon i{
+    font-size: 22px;
+    color: #fff;
+    animation: scrolled 3s ease infinite;
+}
+
+@keyframes scrolled {
+    0%{
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-30%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(60%);
+        opacity: 0;
+    }
+}
+

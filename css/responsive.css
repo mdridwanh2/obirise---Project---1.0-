@@ -1,0 +1,74 @@
+@media (max-width:992px){
+
+ /* ============================== header responsive ==============================  */
+    header{
+        padding: 11px;
+    }
+    .nav-items{
+        position: absolute;
+        background-color: var(--nav-bg-color);
+        left: -100%;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-top: 2px solid #567CDB;
+        height: 100vh;
+    }
+    .nav-items li{
+        padding: 12px 15px;
+        border-bottom: 1px dotted #ddd;
+        text-align: center;
+    }
+
+/* ------------- socail icon ------------- */
+    .socail-icon{
+        padding: 08px 0;  
+    }
+
+/* ------------- socail icon (help css get started) ------------- */
+
+    .get-started{
+        margin: 13px auto;
+    }
+
+/* ------------- humbargder menu ------------- */
+    .humbarger{
+        display: block;
+    }
+    .nav-items.active{
+        left: 0;
+    }
+}
+
+
+
+ /* ============================== bg-cover  responsive ==============================  */
+
+@media (max-width:768px){
+    .bg-cover-text h1 {
+        line-height: 69px;
+        font-size: 56px;
+    }
+    .bg-cover-text p{
+        font-size: 13px;
+    }
+}
+@media (max-width: 570px){
+    .bg-cover-text h1 {
+        line-height: 52px;
+        font-size: 38px;
+    }
+    .bg-cover-text p {
+        font-size: 9px;
+    }
+}
+@media (max-width: 390px){
+    .bg-cover-text h1 {
+        line-height: 39px;
+        font-size: 30px;
+    }
+    .bg-cover-text p {
+        font-size: 8px;
+    }
+}
